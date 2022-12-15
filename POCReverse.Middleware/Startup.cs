@@ -45,6 +45,8 @@ namespace POCReverse.Middleware
             {
                 endpoints.MapReverseProxy();
             });
+
+            app.UseStaticFiles();
         }
     }
 }
