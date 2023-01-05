@@ -8,6 +8,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddSystemWebAdapters()
+    .AddJsonSessionSerializer(options =>
+    {
+        options.RegisterKey<string>("Test");
+    })
+    .AddRemoteAppClient(options =>
+    {
+        options.RemoteAppUrl = new("https://localhost:44323");
+        options.ApiKey = "24B0E9BE-22D4-4979-9E08-6C2726839885";
+    })
+    .AddSessionClient();
 
 var app = builder.Build();
 

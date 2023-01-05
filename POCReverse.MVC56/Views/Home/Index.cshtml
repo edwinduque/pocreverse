@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var obj = System.Web.HttpContext.Current.Session?["Test"];
+    var texto = obj == null ? "" : obj.ToString();
+}
+
+<div class="text-center">
+    <h1 class="display-4">@texto</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

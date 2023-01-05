@@ -11,7 +11,7 @@ namespace POCReverse.Forms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            System.Web.HttpContext.Current.Session["Test"] = "Lo que sea";
         }
     }
 }
