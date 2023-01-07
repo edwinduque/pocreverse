@@ -16,7 +16,7 @@ namespace POCReverse.Forms
             var id = Session["algo"].ToString();
             lbHome.HRef = $"~/?id={id}";
             lbAbout.HRef = $"~/About?id={id}";
-            lbContact.HRef = $"~/Cotact?id={id}";
+            lbContact.HRef = $"~/Contact?id={id}";
         }
     }
 }
