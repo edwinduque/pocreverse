@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POCReverse.Forms", "POCReve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POCReverse.Blazor", "POCReverse.Blazor\POCReverse.Blazor.csproj", "{82E8C676-9996-47A8-93BF-B37C575A2E41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POCReverse.Middleware", "POCReverse.Middleware\POCReverse.Middleware.csproj", "{D81F9C59-14DD-40F4-9557-BECD0A187040}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POCReverse.Middleware", "POCReverse.Middleware\POCReverse.Middleware.csproj", "{D81F9C59-14DD-40F4-9557-BECD0A187040}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POCReverse.MVC56", "POCReverse.MVC56\POCReverse.MVC56.csproj", "{0FA0B06D-B95F-44D1-93CA-C3AE7F62E413}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

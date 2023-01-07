@@ -11,7 +11,12 @@ namespace POCReverse.Forms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Session["algo"] = "cabezon";
 
+            var id = Session["algo"].ToString();
+            lbHome.HRef = $"~/?id={id}";
+            lbAbout.HRef = $"~/About?id={id}";
+            lbContact.HRef = $"~/Cotact?id={id}";
         }
     }
 }

@@ -1,4 +1,7 @@
-﻿@page "/about"
+﻿@inject NavigationManager NavManager
+@page "/about"
+@using Microsoft.AspNetCore.WebUtilities;
+
 
 <PageTitle>About</PageTitle>
 
@@ -10,9 +13,19 @@
 
 @code {
     private int currentCount = 0;
-
     private void IncrementCount()
     {
         currentCount++;
     }
+    string loquesea = "";
+
+    protected override void OnInitialized()
+    {
+        var uri = NavManager.ToAbsoluteUri(NavManager.Uri);
+        if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("id", out var _id))
+        {
+            loquesea = _id;
+        }
+    }
 }
+

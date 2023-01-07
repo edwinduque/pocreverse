@@ -7,4 +7,9 @@
     <PackageProjectUrl></PackageProjectUrl>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="EnyimMemcachedCore" Version="2.5.7" />
+    <PackageReference Include="Microsoft.AspNetCore.SystemWebAdapters.CoreServices" Version="1.0.0" />
+  </ItemGroup>
+
 </Project>
